@@ -22,11 +22,11 @@ const User = {
                     req.session.loginUser = user;
                     res.redirect('/');
                 } else {
-                    req.flash('error', '密码错误！')
+                    req.flash('error', '密码错误！');
                     res.redirect('/users/login');
                 }
             } else {
-                req.flash('error', '用户不存在！')
+                req.flash('error', '用户不存在！');
                 res.redirect('/users/login');
             }
         })

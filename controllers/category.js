@@ -65,14 +65,6 @@ const Category = {
         if (pid == 0){
             pid = null
         }
-
-        // let name = '测试';
-        // let path = '/text'
-        // let sort = 100;
-        // let template = '';
-        // let is_nav = 1;
-        // let pid = null;
-
         let c = new CategoryModel({
             name: name,
             path: path,

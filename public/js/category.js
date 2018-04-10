@@ -1,6 +1,6 @@
 $(function () {
     getCategoryList();
-})
+});
 
 /**
  * 获取列表

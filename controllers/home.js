@@ -64,7 +64,7 @@ const Home = {
             }
             ArticleModel.find(where).count().then(doc=>{
                 count = doc;
-                totalPage = Math.ceil(count/limit)
+                totalPage = Math.ceil(count/limit);
                 //console.log(key);
                 ArticleModel.find(where).skip((page-1)*limit).limit(2).sort({create_at:'desc'}).then(doc=>{
                     // res.json(doc);
@@ -75,9 +75,9 @@ const Home = {
                         totalPage:totalPage,
                         user:user
                     });
-                })
+                });
             });
-        })
+        });
     }
 }
 module.exports = Home;
